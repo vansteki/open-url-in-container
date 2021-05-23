@@ -59,7 +59,7 @@ urlencode() {
      encoded+="${o}"
   done
   echo "${encoded}"
-}
+}?
 
 if [ -z "$FIREFOX" ]
 then
@@ -170,4 +170,4 @@ then
 	FULL_URL="${FULL_URL}&signature=${SIGNATURE}"
 fi
 
-$FIREFOX $FIREFOX_ARGS "$FULL_URL"
+"$FIREFOX" $FIREFOX_ARGS "$FULL_URL"
